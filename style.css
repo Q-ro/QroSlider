@@ -1,0 +1,85 @@
+/*
+    CSS Style for QroSlider.
+    Created by : Andres Mrad (Q-ro).
+    Creation date: June 20 2013.
+*/
+
+body{
+  font-family: "futura", arial;
+}
+
+.qroSlider{
+    position: relative;
+    padding-top: 60%;
+    overflow: hidden;
+} 
+ 
+.qroSlider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+}
+ 
+.qroSlider img.slide{
+    height: auto;
+}
+
+.qroSlider .prev,
+.qroSlider .next{
+  position: absolute;
+  height: 80px;
+  line-height: 55px;
+  width: 50px;
+  font-size: 100px;
+  text-align: center;
+  color: #fff;
+  top: 50%;
+  left: 0;
+  z-index: 4;
+  margin-top: -25px;
+  cursor: pointer;
+  opacity: .7;
+  transition: all 150ms;
+}
+
+.qroSlider .prev:hover,
+.qroSlider .next:hover{
+  opacity: 1;
+}
+
+.qroSlider .next{
+  left: auto;
+  right: 0;
+}
+
+.qroSlider .pager_list{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  bottom: 0;
+  text-align: center;
+  z-index: 4;
+}
+
+.qroSlider .pager_list li{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+  background: #fff;
+  opacity: .7;
+  text-indent: -999px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+.qroSlider .pager_list li:hover,
+.qroSlider .pager_list li.active{
+  opacity: 1;
+    background-color:#8eedec;
+}
